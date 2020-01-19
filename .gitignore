@@ -1,0 +1,5 @@
+/tools/
+/vendor/
+/docs/coverage
+/.vscode/*
+/composer.lock

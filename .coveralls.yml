@@ -1,0 +1,3 @@
+# single file
+coverage_clover: docs/coverage/clover/clover.xml
+json_path: docs/coverage/clover/coveralls-upload.json

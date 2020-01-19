@@ -1,0 +1,41 @@
+{
+    "name": "calabrothers/php-ds-tree",
+    "description": "PHP Tree Support",
+    "type": "library",
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "keywords": [
+        "library",
+        "tree",
+        "ds"
+    ],
+    "homepage": "http://www.calabrothers.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincenzo Calabrò",
+            "email": "vincenzo@calabrothers.com"
+        }
+    ],
+    "require": {
+        "php-ds/php-ds": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ds\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test":             "vendor/bin/phpunit --whitelist src/ tests/",
+        "coverage_html":    "vendor/bin/phpunit --coverage-html     docs/coverage/html              --whitelist src/ tests/",
+        "coverage_clover":  "vendor/bin/phpunit --coverage-clover   docs/coverage/clover/clover.xml --whitelist src/ tests/"
+    }    
+}
